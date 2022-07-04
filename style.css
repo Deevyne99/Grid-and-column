@@ -17,16 +17,16 @@ body{
 .container{
     margin: 0 auto;
     margin-top: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
      justify-content: center;
      align-items: center;
-     width: 600px; 
+     width: 700px; 
      margin-bottom: 15px;
     }
     .content{
         height: 400px;
-        width: 245px;
+        width: 300px;
         padding: 40px 35px;
         margin: 0 auto;
         z-index: 3;
@@ -35,14 +35,15 @@ body{
     background-color: hsl(31, 77%, 52%);
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    width:400px ;
 }
 .content h2{
     margin-bottom: 20px;
     margin-top: 15px;
     text-transform: uppercase;
-   color: hsla(0, 0%, 100%, 0.75); 
-   font-size: 28px;
-
+    color: hsla(0, 0%, 100%, 0.75); 
+    font-size: 28px;
+    
 }
 .content p{
     margin-bottom: 70px;
@@ -51,6 +52,7 @@ body{
     font-family:'Lexend Deca' ;
     font-weight: none;
     line-height: 20px;
+    width: 175px;
 }
 .content.one a{
     text-decoration: none;
@@ -59,12 +61,13 @@ body{
     text-transform: capitalize;
     border-radius: 50px;
     color: hsl(31, 77%, 52%);
-    width: 200px;
+    width: 300px;
     font-family: 'Lexend Deca';
     cursor: pointer;
 }
 .content.two{
     background-color: hsl(184, 100%, 22%);
+    width: 400px;
 }
 .content.two a {
     text-decoration: none;
@@ -80,6 +83,7 @@ body{
     background-color: hsl(179, 100%, 13%);
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    width: 400px;
 }
 .content.three a {
     text-decoration: none;
@@ -109,6 +113,14 @@ body{
 .attribution a{
     font-family: 'Lexend Deca';
     font-size: 15px;
+}
+.grid{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.grid a{
+    text-decoration: none;
 }
 @media(max-width:768px){
     .container {
@@ -182,13 +194,14 @@ body{
 }
 @media(max-width:414px){
     .container {
-        display: grid;
-            grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
             padding: 60px 10px;
             width: 100px;
+            height: 1800px;
         }
         
         .content p {
@@ -217,13 +230,14 @@ body{
     }
     @media (max-width:375px){
         .container{
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
             padding: 60px 10px;
             width: 100px;
+            height: 1200px;
         }
         .content p{
             width: 180px;
